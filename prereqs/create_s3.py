@@ -160,7 +160,7 @@ if __name__ == "__main__":
             print("Error: --directory is required for create mode")
             exit(1)
             
-        bucket_name = s3_handler.create_bucket(args.bucket_prefix)
+        # bucket_name = s3_handler.create_bucket(args.bucket_prefix)
         if bucket_name:
             s3_handler.upload_directory(bucket_name, args.directory, args.s3_prefix)
             print(f"Bucket name: {bucket_name}")
