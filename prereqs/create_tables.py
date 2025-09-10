@@ -190,12 +190,12 @@ class DynamoDBTables:
 if __name__ == "__main__":
     ddb_tables = DynamoDBTables()
     ddb_table_data = {
-        "demo_mcp_product_inventory": {
+        "anycompany_product_inventory": {
             "file_path": "data_files/product_inventory/product_inventory.csv",
             "file_type": "csv",
             "partition_key": "product_id"
         },
-        "demo_mcp_product_reviews": {
+        "anycompany_product_reviews": {
             "file_path": "data_files/product_reviews/product_reviews.csv",
             "file_type": "csv",
             "partition_key": "product_id"
