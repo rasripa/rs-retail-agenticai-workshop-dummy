@@ -211,7 +211,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    if args.mode == "create":
+    if args.mode == "load":
         tables_to_create = ddb_table_data.keys()
         for table_name in tables_to_create:
             ddb_tables.table_name = table_name
