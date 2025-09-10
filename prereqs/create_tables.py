@@ -11,7 +11,7 @@ import time
 import uuid
 from botocore.exceptions import ClientError
 from dynamodb_json import json_util as ddb_json
-from retrying import retry
+#from retrying import retry
 import csv
 import os
 import argparse
@@ -71,7 +71,7 @@ class DynamoDBTables:
 
         self.ddb_table_name = None
 
-    @retry(wait_random_min=1000, wait_random_max=2000, stop_max_attempt_number=7)
+    #@retry(wait_random_min=1000, wait_random_max=2000, stop_max_attempt_number=7)
     def create_dynamo_db_tables(
         self,
         ddb_table_name: str,
