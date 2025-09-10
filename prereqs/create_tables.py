@@ -215,12 +215,12 @@ if __name__ == "__main__":
         tables_to_create = ddb_table_data.keys()
         for table_name in tables_to_create:
             ddb_tables.table_name = table_name
-            table_creation_status = ddb_tables.create_dynamo_db_tables(
-                ddb_table_name=table_name,
-                ddb_partition_key=ddb_table_data[table_name]["partition_key"],
-                ddb_sort_key=ddb_table_data[table_name].get("sort_key", None)
-            )
-            if table_creation_status:
+            #table_creation_status = ddb_tables.create_dynamo_db_tables(
+            #    ddb_table_name=table_name,
+            #    ddb_partition_key=ddb_table_data[table_name]["partition_key"],
+            #    ddb_sort_key=ddb_table_data[table_name].get("sort_key", None)
+            #)
+            if True:
                 ddb_tables.load_data(
                     ddb_table_name=table_name,
                     ddb_file_path=ddb_table_data[table_name]["file_path"],
