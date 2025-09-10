@@ -52,7 +52,7 @@ if [ "$MODE" = "create" ]; then
   fi
   
   # Execute Python script for create mode
-  python create_s3.py --mode create --bucket-prefix "$BUCKET_PREFIX" --directory "$DIRECTORY" --s3-prefix "$S3_PREFIX"
+  python3 create_s3.py --mode create --bucket-prefix "$BUCKET_PREFIX" --directory "$DIRECTORY" --s3-prefix "$S3_PREFIX"
   
 elif [ "$MODE" = "delete" ]; then
   if [ -z "$BUCKET_NAME" ]; then
@@ -61,7 +61,7 @@ elif [ "$MODE" = "delete" ]; then
   fi
   
   # Execute Python script for delete mode
-  python create_s3.py --mode delete --bucket-name "$BUCKET_NAME"
+  python3 create_s3.py --mode delete --bucket-name "$BUCKET_NAME"
   
 else
   echo "Error: Invalid mode. Use 'create' or 'delete'"
