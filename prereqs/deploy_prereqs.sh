@@ -1,7 +1,7 @@
 # agent knowledge base
-pip install opensearch-py
-echo "deploying knowledge base ..."
-python knowledge_base.py --mode create
+#pip install opensearch-py
+#echo "deploying knowledge base ..."
+#python knowledge_base.py --mode create
 
 # create required dynamodb tables
 pip install dynamodb-json -q
