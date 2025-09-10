@@ -1,5 +1,5 @@
 # create required dynamodb tables
-pip install dynamodb-json -q
+pip3 install dynamodb-json -q
 echo "managing Dynamo DB Tables ..."
-python create_tables.py --mode create
+python3 create_tables.py --mode create
 
