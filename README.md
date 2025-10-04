@@ -5,35 +5,39 @@ This workshop demonstrates how to build intelligent AI agents for retail and con
 ## Workshop Structure
 
 ### Prerequisites
-Before starting any labs, run the setup notebook in the `prereqs` folder:
-- Sets up AWS resources (S3 buckets, DynamoDB tables, Bedrock Knowledge Bases)
-- Loads sample product data
-- Creates necessary infrastructure for all labs
+- Sample data for loading into S3 and DynamoDB.
 
 ### Lab 0: Fundamentals
-- Introduction to Strands Agents framework
-- Basic agent creation and configuration
-- Working with models, tools, and observability
+Comprehensive introduction to Strands Agents framework:
+- Basic agent creation and model configuration
+- Tool integration and custom tool development
+- Advanced patterns including async operations and callback handling
+- Observability, monitoring, and debugging techniques
+- Multi-modal capabilities and guardrail implementation
 
 ### Lab 1: FAQ Agents
-- **Lab 1a**: Creating an FAQ agent using Amazon Bedrock Agent Builder
-- **Lab 1b**: Building a custom FAQ agent with Strands Agents and Bedrock Knowledge Base
+Two approaches to building FAQ systems:
+- **Lab 1a**: Console-based agent using Amazon Bedrock Agent Builder
+- **Lab 1b**: Code-first approach with Strands Agents and Knowledge Base integration
 
 ### Lab 2: Product Search Agent
-- Creating a product search and recommendation agent
-- Connecting to Bedrock Knowledge Base for product information
-- Implementing guardrails for content safety
-- Using MCP Server for product reviews
+AI-powered shopping assistant Agent with advanced capabilities:
+- Product discovery and recommendation engine
+- Bedrock Knowledge Base integration for semantic search
+- Content safety through guardrails implementation
+- External service integration via MCP (Model Context Protocol)
+- Product review aggregation and analysis
 
 ### Lab 3: Inventory Agent
-- Building an inventory management agent
-- Connecting to DynamoDB for real-time inventory data
-- Returning structured inventory information
+Real-time inventory check Agent:
+- Stock availability checking
 
 ### Lab 4: Search Orchestrator Agent
-- Implementing multi-agent collaboration
-- Creating an orchestrator agent that coordinates specialized agents
-- Routing queries to appropriate agents based on intent
+Multi-agent collaboration and intelligent routing:
+- Centralized orchestration of specialized agents
+- Intent recognition and query routing
+- Agent coordination and response aggregation
+- Scalable multi-agent architecture patterns
 
 ## Key Technologies
 
@@ -45,16 +49,10 @@ Before starting any labs, run the setup notebook in the `prereqs` folder:
 
 ## Getting Started
 
-1. Start with the prerequisites notebook in the `prereqs` folder
-2. Complete Lab 0 to understand the fundamentals of Strands Agents
-3. Progress through Labs 1-4 in sequence
-4. Each lab builds on concepts from previous labs
+1. Start with `lab-0/fundamentals`
+3. Progress through Labs 0-4 in sequence
 
 ## Requirements
 
 - AWS account with access to Amazon Bedrock
-- Python 3.9+
-- Required Python packages: strands-agents, strands-agents-tools, boto3
-
-## Get started
-Open `prereqs` folder to start the first activity.
+- Python 3.11+
